@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let angka = 22505197803;
+        let golongan = Math.floor (angka/10000000000);
+        let dd = Math.floor (angka/100000000%100)
+        let mm = Math.floor (angka/1000000%100);
+        let yy = Math.floor (angka/100%10000);
+        let nn = Math.floor (angka%100);
+
+        switch (mm) {
+            case 1:
+                bulan ='januari';
+            break;
+            case 2:
+                bulan = 'februari';
+            break;
+            case 3:
+                 bulan = 'maret'
+            default:
+                bulan = 'tidak diketahui';
+        }
+        console.log('golongan:', golongan)
+        console.log('hari:', dd)
+        console.log('bulan:', mm)
+        console.log('tahun:', yy)
+        console.log('no urut:', nn)
+
+    </script>
+</body>
+</html>
